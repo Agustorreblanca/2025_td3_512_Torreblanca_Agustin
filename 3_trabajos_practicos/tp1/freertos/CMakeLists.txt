@@ -4,6 +4,7 @@ cmake_minimum_required(VERSION 3.12)
 if(${PICO_BOARD} STREQUAL "pico2" OR ${PICO_BOARD} STREQUAL "pico2_w")
     set(CORE RP2350_ARM_NTZ)
 elseif(${PICO_BOARD} STREQUAL "pico" OR ${PICO_BOARD} STREQUAL "pico_w")
+elseif(${PICO_BOARD} STREQUAL "pico")
     set(CORE RP2040)
 endif()
 
